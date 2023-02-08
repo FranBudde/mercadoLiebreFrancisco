@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.banner{
+    margin: auto;  
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+            /* HEADER */
+header{
+    background-color: #EAC926;
+}
+
+#subtitulo-header{
+    text-align: center;
+}
+#buscador-header{
+    width: 50%;
+    text-align: center;
+}
+
+.navbar{
+    display: none;  
+}
+.navbar a{
+    margin-top: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+}
+.navbar ul {
+    padding: 0;
+}
+.navbar li{
+    list-style: none;
+}
+
+.logo {
+ 
+    width: 50%;
+    margin: auto;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.burger-menu{
+    margin-top: 10px;
+}
+
+.burger-menu button{
+    height: 35px;
+    display: block;
+    margin: auto;
+    width: 41px;
+    border-radius: 20%;
+    background-color: #03264C;;
+}
+.burger-menu button i{
+    color: white;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+
+h2 {
+    font-size: 24px;
+}
+
+.lupa{
+    margin-top: 100px;
+    margin-left: 1px;
+    outline-color: black;
+    background-color: white;
+    
+}
+
+
+          /*  MAIN  */
+
+main {
+    margin: auto;
+    width: 90vw;
+}
+
+.conteiner-productos img{ 
+    width: 100%;
+}
+.conteiner-productos{
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;  
+}
+main > .insale{
+    margin-top: 10px;
+}
+
+.producto{  
+    display: flex; 
+}
+.info-productos{ 
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+
+.iconos{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #03264C;
+}
+
+.conteiner-infoProduct{
+    display: flex;
+    align-items: center;
+    
+}
+.precio,.descuentos{
+    margin-bottom: 10px;
+}
+.precio{
+     width: 30%;
+    font-size: 18px;
+}
+.descuentos {
+    width: 70%;
+    color: #39b54a;
+    font-size: 16px;
+}
+.descripcion {
+    color: #666;
+    font-size: 16px;
+}
+
+.info-productos{
+    position: relative;
+}
+.icon-truck{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+
+
+
+            /* FOOTER */
+
+.info-Conteiner{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

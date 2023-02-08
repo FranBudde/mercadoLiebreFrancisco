@@ -1,0 +1,57 @@
+    /* Tablet */
+    @media (min-width: 768px){
+        .navbar{
+            display: block;  
+        }
+    
+        .burger-menu{
+            display: none;
+        }
+        #buscador-header{
+            margin-left: 5px;
+        }
+        .box-products{
+            flex-basis: 48%;
+        }
+        #conteiner-Header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -10px;
+        }
+        .navbar ul{
+            display: flex;
+        }
+        .navbar li{
+            margin: 0 15px;
+        }
+    
+        .box-products{
+            box-shadow:  0px 0px 10px rgb(100, 100, 100);
+            }
+    
+    }
+    
+    
+        /* Desktop */
+    @media (min-width: 1024px){
+        .box-products{
+            flex-basis: 24%;
+        }
+        .navbar{
+            max-width: 1200px;
+            margin: auto;
+        }
+    
+        /* .precio, .descuentos {
+            margin-right: 15px;
+        } */
+        .descuentos{
+           margin-left: 17px;
+        }
+    }
+    
