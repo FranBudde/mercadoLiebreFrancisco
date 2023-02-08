@@ -29,8 +29,9 @@ header{
     text-align: center;
 }
 #buscador-header{
+    display: flex;
     width: 50%;
-    text-align: center;
+    justify-content: center;
 }
 
 .navbar{
