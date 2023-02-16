@@ -183,6 +183,15 @@ main > .insale{
 }
 
 
+/*     Productos      */
+
+.icon-truck{
+    transition: transform 1s;
+}
+
+.box-products:hover .icon-truck{
+    transform: rotate(-90deg);
+}
 
 
             /* FOOTER */
