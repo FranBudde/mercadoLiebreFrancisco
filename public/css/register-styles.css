@@ -53,14 +53,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 68vh;
+
 }
 
-.info-Conteiner{
-    margin-top: 300px;
-}
+
 
 .container-intereses{
     display: flex;
     flex-direction: column;
+}
+
+
+
+/* botones */
+
+.container-botones-register{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones-register{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
 }

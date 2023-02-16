@@ -135,7 +135,7 @@ main > .insale{
 .iconos{
     font-size: 20px;
     margin-top: 10px;
-    color: #03264C;
+    color: var(--Azul);
 }
 
 .conteiner-infoProduct{
@@ -180,6 +180,8 @@ main > .insale{
 
 .titles-h2{
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -197,6 +199,7 @@ main > .insale{
             /* FOOTER */
 
 .info-Conteiner{
+    margin-top: 35px;
     text-align: center;
 }
 
