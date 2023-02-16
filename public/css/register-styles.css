@@ -76,4 +76,13 @@ body{
     width: 120px;
     height: 30px;
     margin-top: 10px;
+
+    background-color: var(--Celeste);
+    color: var(--Gris-claro);
+    border: none;
+    border-radius: 6px;
+}
+
+.botones-register:hover{
+    background-color: #0022AA;
 }
