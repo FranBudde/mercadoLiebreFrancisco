@@ -20,8 +20,7 @@ body{
 .form-register{
     width: 300px;
     margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
+    margin-top: 60px;
     font-family: "Roboto";
 }
 
@@ -29,10 +28,12 @@ body{
   width: 100%;
   border-radius: 4px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border: 1px solid black;
   font-family: "Roboto";
   font-size: 15px;
+  border: none;
+  border-radius: 5px;
 }
 
 .perfil-usuario{
@@ -43,7 +44,23 @@ body{
 .title-formulario{
     font-size: 20px;
     font-family: "Roboto";
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     
 }
 
+
+.contenedor-centrado-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68vh;
+}
+
+.info-Conteiner{
+    margin-top: 300px;
+}
+
+.container-intereses{
+    display: flex;
+    flex-direction: column;
+}

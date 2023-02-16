@@ -1,0 +1,39 @@
+.contenedor-del-formulario-y-boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;;
+
+}
+
+.contenedor-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68vh;
+  }
+  
+
+.container-nombreUsuario,.container-password,.boton-de-enviar{
+    width: 260px;
+    height: 40px;
+}
+
+.contraseña,.nombre-usuario{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+    color: var(--Gris-oscuro);
+
+
+}
+
+.boton-de-enviar{
+    background-color: var(--Celeste);
+    color: var( --Gris-claro);
+    border: none;
+    border-radius: 6px;
+}
+

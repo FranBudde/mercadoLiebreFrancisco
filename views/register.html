@@ -13,7 +13,7 @@
     <!--              Tipografia Roboto                    -->
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!--              Pagina de iconos                   -->
 
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
 
     <!--              Hojas de estilos propias                    -->
+    <link rel="stylesheet" href="/css/animaciones.css">
     <link rel="stylesheet" href="/css/animaciones.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/colores.css">
@@ -37,16 +38,17 @@
         <div id="conteiner-Header">
             <div id="logoYbarraDebusqueda">
                 <div class="logo">
-                    <img src="/images/logo-mercado-liebre.svg" alt="">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt=""></a>
                 </div>
                 <br>
                 <form id="buscador-header">
-                    <input type="text" placeholder="buscar...">
+                    <input type="search" placeholder="buscar...">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
+
             </div>
-            <h3 id="subtitulo-header">Compra en cuotas sin tarjeta de credito <i
-                    class="fa-solid fa-hand-holding-dollar"></i></h3>
+            <h3 id="subtitulo-header"><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas sin tarjeta de
+                credito </h3>
         </div>
 
         <nav class="navbar">
@@ -59,7 +61,7 @@
             </ul>
             <ul class="navbar-rigth">
                 <li><a href="register">Crea tu cuenta</a> <i class="fa-solid fa-id-card"></i> </li>
-                <li><a href="#">Ingresa</a> <i class="fa-solid fa-right-to-bracket"></i> </li>
+                <li><a href="login">Ingresa</a> <i class="fa-solid fa-right-to-bracket"></i> </li>
                 <li><a href="#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i> </li>
             </ul>
 
@@ -80,75 +82,124 @@
 
         <!--                  Formulario                       -->
 
+        <div class="contenedor-centrado-register">
 
-        <!-- uso el metodo post para que la informacion no aparezca en la url y se mande directo al servidor -->
-        <form class="form-register" method="post" action="/register">
+            <!-- uso el metodo post para que la informacion no aparezca en la url y se mande directo al servidor -->
+            <form class="form-register" method="post" action="/register">
 
-            <!-- uso el required true para que tengan que llenar esas peticiones si o si -->
-            <input class="input-controls" type="text" id="nombre-apellido" placeholder="Nombre y apellido"
-                name="nombreYapellido" required="true" minlength="4">
+                <!-- uso el required true para que tengan que llenar esas peticiones si o si -->
+                <input class="input-controls" type="text" id="nombre-apellido" placeholder="Nombre y apellido"
+                    name="nombreYapellido" required="true" minlength="4">
 
-            <input class="input-controls" type="text" placeholder="Nombre de usuari@" id="nombre-usuario"
-                name="nombreDeUsuario" required="true">
+                <input class="input-controls" type="text" placeholder="Nombre de usuari@" id="nombre-usuario"
+                    name="nombreDeUsuario" required="true">
 
-            <input class="input-controls" type="email" placeholder="ingresar email" id="email" name="email"
-                required="true">
+                <input class="input-controls" type="email" placeholder="ingresar email" id="email" name="email"
+                    required="true">
 
-            <label class="title-formulario">Fecha de nacimiento</label>
-            <input class="input-controls" type="date" placeholder="Fecha de nacimiento" id="fecha-nacimiento"
-                name="fechaDeNacimiento" required="true" max="2005-02-06">
+                <h3 class="title-formulario">Fecha de nacimiento</h3>
+                <input class="input-controls" type="date" placeholder="Fecha de nacimiento" id="fecha-nacimiento"
+                    name="fechaDeNacimiento" required="true" max="2005-02-06">
 
-            <input class="input-controls" type="text" placeholder="Domicilio" id="domicilio" name="domicilio"
-                required="true">
+                <input class="input-controls" type="text" placeholder="Domicilio" id="domicilio" name="domicilio"
+                    required="true">
 
 
-                <label class="title-formulario">Perfil de usuario</label>     
-                <div class="perfil-usuario">          
-                <label for="comprador">Comprador    
-                    <input class="input-controls" type="radio" id="comprador" name="perfil" value="comprador"
-                        required="true">
-                </label>
+                <h3 class="title-formulario">Perfil de usuario</h3>
+                <div class="perfil-usuario">
+                    <label for="comprador">Comprador
+                        <input class="input-controls" type="radio" id="comprador" name="perfil" value="comprador"
+                            required="true">
+                    </label>
 
-                <label for="comprador">Vendedor
-                    <input class="input-controls" type="radio" id="vendedor" name="perfil" value="vendedor"
-                        required="true">
-                </label>
+                    <label for="comprador">Vendedor
+                        <input class="input-controls" type="radio" id="vendedor" name="perfil" value="vendedor"
+                            required="true">
+                    </label>
+                </div>
+
+
+
+                <div class="container-intereses">
+                <h3 class="title-formulario" required="true">Intereses</h3>
+                <div class="intereses">
+
+                    <div class="container-checkbox">
+                        <label for="electro">Electro
+                            <input class="input-controls" type="checkbox" id="electro" name="inrereses"
+                                value="intereses">
+                        </label>
+                    </div>
+
+                    <div class="container-checkbox">
+                        <label for="moda">
+                            Moda <input class="input-controls" type="checkbox" id="moda" name="inrereses" value="moda">
+                        </label>
+                    </div>
+
+                    <div class="container-checkbox">
+                        <label for="hogar">Hogar
+                           <input class="input-controls" type="checkbox" id="hogar" name="inrereses" value="hogar">
+                        </label>
+                    </div>
+
+                    <div class="container-checkbox">
+                        <label for="jugueteria">Jugueteria
+                            <input class="input-controls" type="checkbox" id="jugueteria" name="inrereses"
+                                value="jugueteria">
+                        </label>
+                    </div>
+
+                    <div class="container-checkbox">
+                        <label for="vida-sana">Vida sana
+                            <input class="input-controls" type="checkbox" id="vida-sana" name="inrereses"
+                                value="vida-sana">
+                        </label>
+                    </div>
+                </div>
             </div>
 
+                <button type="submit" value="Enviar">Enviar <a href="home"></a></button>
 
-            <label class="title-formulario" required="true">Intereses</label>
-            <div class="intereses">
-            <label for="electro">Electro
-                <input class="input-controls" type="checkbox" id="electro" name="inrereses" value="intereses">
-            </label>
 
-            <label for="moda">Moda
-                <input class="input-controls" type="checkbox" id="moda" name="inrereses" value="moda">
-            </label>
 
-            <label for="hogar">Hogar
-                <input class="input-controls" type="checkbox" id="hogar" name="inrereses" value="hogar">
-            </label>
-
-            <label for="jugueteria">Jugueteria
-                <input class="input-controls" type="checkbox" id="jugueteria" name="inrereses" value="jugueteria">
-            </label>
-
-            <label for="vida-sana">Vida sana
-                <input class="input-controls" type="checkbox" id="vida-sana" name="inrereses" value="vida-sana">
-            </label>
+            </form>
         </div>
-
-            <button type="submit" value="Enviar">Enviar <a href="home"></a></button>
-
-
-
-        </form>
-
 
 
 
     </main>
+
+    <footer class="info-Conteiner">
+        <ul><u>
+                <i class="fa-solid fa-credit-card iconos"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+            </u></ul>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+            seguro!</p>
+
+
+        <ul><u>
+                <i class="fa-solid fa-gift iconos"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+            </u></ul>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos</p>
+
+
+        <ul><u>
+                <i class="fa-solid fa-user-shield iconos"></i>
+                <h3>Seguridad, de principio a fin</h3>
+            </u></ul>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+            protegid@
+        </p>
+
+
+        <ul>
+            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        </ul>
+    </footer>
 </body>
 
 </html>
